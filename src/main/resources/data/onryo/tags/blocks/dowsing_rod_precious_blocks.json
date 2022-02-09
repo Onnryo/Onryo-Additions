@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:ancient_debris",
+    "onryo:orichalcum_ore",
+    "onryo:deepslate_orichalcum_ore"
+  ]
+}
