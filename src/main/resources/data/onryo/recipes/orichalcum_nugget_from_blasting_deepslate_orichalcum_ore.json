@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "orichalcum_ingot",
+  "ingredient": {
+    "item": "onryo:deepslate_orichalcum_ore"
+  },
+  "result": "onryo:orichalcum_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

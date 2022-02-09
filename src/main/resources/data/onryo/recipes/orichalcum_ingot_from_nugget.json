@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "orichalcum_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "onryo:orichalcum_nugget"
+    }
+  },
+  "result": {
+    "item": "onryo:orichalcum_ingot"
+  }
+}
