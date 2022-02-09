@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "iron_ingot",
+  "group": "orichalcum_ingot",
   "ingredients": [
     {
-      "item": "minecraft:iron_block"
+      "item": "onryo:orichalcum_block"
     }
   ],
   "result": {
-    "item": "minecraft:iron_ingot",
+    "item": "onryo:orichalcum_ingot",
     "count": 9
   }
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "onryo:orichalcum_ore",
+    "onryo:orichalcum_block",
+    "onryo:raw_orichalcum_block",
+    "onryo:deepslate_orichalcum_ore"
+  ]
+}

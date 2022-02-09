@@ -4,7 +4,7 @@
   "ingredient": {
     "item": "onryo:raw_orichalcum_block"
   },
-  "result": "onryo:orichalcum_block",
+  "result": "onryo:orichalcum_ingot",
   "experience": 6.3,
   "cookingtime": 750
 }

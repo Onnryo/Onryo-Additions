@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "onryo:orichalcum_block"
+          "name": "onryo:raw_orichalcum_block"
         }
       ]
     }

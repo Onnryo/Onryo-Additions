@@ -7,10 +7,10 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_ingot"
+      "item": "onryo:orichalcum_ingot"
     }
   },
   "result": {
-    "item": "minecraft:iron_block"
+    "item": "onryo:orichalcum_block"
   }
 }

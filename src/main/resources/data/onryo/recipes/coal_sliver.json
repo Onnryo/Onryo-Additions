@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "orichalcum_ingot",
   "ingredients": [
     {
-      "item": "onryo:orichalcum_ingot"
+      "item": "minecraft:coal"
     }
   ],
   "result": {
-    "item": "onryo:orichalcum_nugget",
-    "count": 9
+    "item": "onryo:coal_sliver",
+    "count": 4
   }
 }

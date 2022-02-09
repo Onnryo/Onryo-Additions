@@ -7,13 +7,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:sweet_berries"
+          "name": "onryo:strawberries"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "minecraft:sweet_berry_bush",
+          "block": "onryo:strawberry_bush",
           "properties": {
             "age": "3"
           }
@@ -45,13 +45,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:sweet_berries"
+          "name": "onryo:strawberries"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "minecraft:sweet_berry_bush",
+          "block": "onryo:strawberry_bush",
           "properties": {
             "age": "2"
           }

@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:raw_iron_block"
+      "item": "onryo:raw_orichalcum_block"
     }
   ],
   "result": {
-    "item": "minecraft:raw_iron",
+    "item": "onryo:raw_orichalcum",
     "count": 9
   }
 }

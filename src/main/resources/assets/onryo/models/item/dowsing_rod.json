@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "onryo:item/raw_orichalcum"
+    "layer0": "onryo:item/dowsing_rod"
   }
 }

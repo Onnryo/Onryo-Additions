@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "orichalcum_ingot",
+  "pattern": [
+    " o ",
+    "/ /"
+  ],
+  "key": {
+    "o": {
+      "item": "onryo:orichalcum_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "onryo:dowsing_rod",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "onryo:item/strawberries"
+    "layer0": "onryo:item/coal_sliver"
   }
 }

@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "onryo:block/orichalcum_block" }
+    "": { "model": "onryo:block/raw_orichalcum_block" }
   }
 }
