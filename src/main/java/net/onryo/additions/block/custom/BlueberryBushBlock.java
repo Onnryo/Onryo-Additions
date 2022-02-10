@@ -16,15 +16,15 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.onryo.additions.item.ModItems;
 
-public class StrawberryBushBlock extends SweetBerryBushBlock {
+public class BlueberryBushBlock extends SweetBerryBushBlock {
 
-    public StrawberryBushBlock(Settings settings) {
+    public BlueberryBushBlock(Settings settings) {
         super(settings);
     }
 
     @Environment(EnvType.CLIENT)
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModItems.STRAWBERRIES);
+        return new ItemStack(ModItems.BLUEBERRIES);
     }
 
     @Override
@@ -35,7 +35,7 @@ public class StrawberryBushBlock extends SweetBerryBushBlock {
             return ActionResult.PASS;
         } else if (i > 1) {
             int j = 1 + world.random.nextInt(2);
-            dropStack(world, pos, new ItemStack(ModItems.STRAWBERRIES, j + (bl ? 1 : 0)));
+            dropStack(world, pos, new ItemStack(ModItems.BLUEBERRIES, j + (bl ? 1 : 0)));
 
             world.playSound((PlayerEntity) null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             world.setBlockState(pos, (BlockState) state.with(AGE, 1), 2);

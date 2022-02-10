@@ -26,6 +26,9 @@ public class ModItems {
     public static final Item STRAWBERRIES = registerItem("strawberries",
             new AliasedBlockItem(ModBlocks.STRAWBERRY_BUSH, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).food(ModFoodComponents.STRAWBERRIES)));
 
+    public static final Item BLUEBERRIES = registerItem("blueberries",
+            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).food(ModFoodComponents.BLUEBERRIES)));
+
     public static final Item COAL_SLIVER = registerItem("coal_sliver",
             new Item(new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
 

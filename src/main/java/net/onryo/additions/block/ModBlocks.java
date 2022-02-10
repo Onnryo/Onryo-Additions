@@ -10,6 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.onryo.additions.OnryoAdditionsMod;
+import net.onryo.additions.block.custom.BlueberryBushBlock;
 import net.onryo.additions.block.custom.StrawberryBushBlock;
 import net.onryo.additions.block.custom.StrengthBlock;
 import net.onryo.additions.item.ModItemGroups;
@@ -29,7 +30,13 @@ public class ModBlocks {
     public static final Block RAW_ORICHALCUM_BLOCK = registerBlock("raw_orichalcum_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()), ModItemGroups.ADDITIONS_GROUP);
 
-    public static final Block STRAWBERRY_BUSH = Registry.register(Registry.BLOCK, new Identifier(OnryoAdditionsMod.MOD_ID, "strawberry_bush"), new StrawberryBushBlock(ModItems.STRAWBERRIES));
+    public static final Block STRAWBERRY_BUSH = registerBlock("strawberry_bush",
+            new StrawberryBushBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), null);
+
+    public static final Block BLUEBERRY_BUSH = registerBlock("blueberry_bush",
+            new BlueberryBushBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), null);
+    //public static final Block STRAWBERRY_BUSH = Registry.register(Registry.BLOCK, new Identifier(OnryoAdditionsMod.MOD_ID, "strawberry_bush"), new BerryBushBlock(ModItems.STRAWBERRIES));
+    //public static final Block BLUEBERRY_BUSH = Registry.register(Registry.BLOCK, new Identifier(OnryoAdditionsMod.MOD_ID, "blueberry_bush"), new BerryBushBlock(ModItems.BLUEBERRIES));
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

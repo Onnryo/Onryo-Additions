@@ -3,6 +3,7 @@ package net.onryo.additions.util;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.item.ItemRenderer;
 import net.onryo.additions.OnryoAdditionsMod;
 import net.onryo.additions.block.ModBlocks;
 import net.onryo.additions.item.ModItems;
@@ -25,5 +26,6 @@ public class ModRegistries {
         BlockRenderLayerMap registry = BlockRenderLayerMap.INSTANCE;
 
         registry.putBlock(ModBlocks.STRAWBERRY_BUSH, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.BLUEBERRY_BUSH, RenderLayer.getCutout());
     }
 }

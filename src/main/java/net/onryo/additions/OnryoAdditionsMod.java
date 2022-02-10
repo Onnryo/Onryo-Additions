@@ -18,6 +18,7 @@ public class OnryoAdditionsMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		LOGGER.info(ModItems.BLUEBERRIES.getTranslationKey());
 		ModRegistries.registerModStuffs();
 	}
 }
