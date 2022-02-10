@@ -9,10 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.onryo.additions.OnryoAdditionsMod;
 import net.onryo.additions.block.ModBlocks;
-import net.onryo.additions.item.custom.DowsingRodItem;
-import net.onryo.additions.item.custom.ModAxeItem;
-import net.onryo.additions.item.custom.ModHoeItem;
-import net.onryo.additions.item.custom.ModPickaxeItem;
+import net.onryo.additions.item.custom.*;
 
 public class ModItems {
 
@@ -51,6 +48,9 @@ public class ModItems {
 
     public static final Item ORICHALCUM_SWORD = registerItem("orichalcum_sword",
             new SwordItem(ModToolMaterial.ORICHALCUM, 3, 3f, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
+
+    public static final Item ORICHALCUM_PAXEL = registerItem("orichalcum_paxel",
+            new ModPaxelItem(ModToolMaterial.ORICHALCUM, 1, 1f, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(OnryoAdditionsMod.MOD_ID, name), item);

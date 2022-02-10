@@ -13,6 +13,7 @@ public class ModTags {
         public static final Tag.Identified<Block> DOWSING_ROD_USEFUL_BLOCKS = createTag("dowsing_rod_useful_blocks");
         public static final Tag.Identified<Block> DOWSING_ROD_VALUABLE_BLOCKS = createTag("dowsing_rod_valuable_blocks");
         public static final Tag.Identified<Block> DOWSING_ROD_PRECIOUS_BLOCKS = createTag("dowsing_rod_precious_blocks");
+        public static final Tag.Identified<Block> PAXEL_MINEABLE = createTag("mineable/paxel");
 
         // Define common tags
         public static final Tag.Identified<Block> ORICHALCUM_BLOCKS = createCommonTag("orichalcum_blocks");
