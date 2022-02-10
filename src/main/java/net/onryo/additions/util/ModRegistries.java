@@ -11,6 +11,9 @@ import net.onryo.additions.item.ModItems;
 public class ModRegistries {
     public static void registerModStuffs() {
         registerFuelds();
+    }
+
+    public static void registerClientStuffs() {
         registerRenderLayerMap();
     }
 

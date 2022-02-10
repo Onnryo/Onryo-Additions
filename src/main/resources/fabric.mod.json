@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.onryo.additions.OnryoAdditionsMod"
+    ],
+    "client": [
+      "net.onryo.additions.OnryoAdditionsClient"
     ]
   },
   "mixins": [

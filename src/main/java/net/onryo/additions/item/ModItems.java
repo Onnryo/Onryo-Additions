@@ -3,11 +3,16 @@ package net.onryo.additions.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.onryo.additions.OnryoAdditionsMod;
 import net.onryo.additions.block.ModBlocks;
 import net.onryo.additions.item.custom.DowsingRodItem;
+import net.onryo.additions.item.custom.ModAxeItem;
+import net.onryo.additions.item.custom.ModHoeItem;
+import net.onryo.additions.item.custom.ModPickaxeItem;
 
 public class ModItems {
 
@@ -31,6 +36,21 @@ public class ModItems {
 
     public static final Item COAL_SLIVER = registerItem("coal_sliver",
             new Item(new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
+
+    public static final Item ORICHALCUM_PICKAXE = registerItem("orichalcum_pickaxe",
+            new ModPickaxeItem(ModToolMaterial.ORICHALCUM, 1, 2f, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
+
+    public static final Item ORICHALCUM_AXE = registerItem("orichalcum_axe",
+            new ModAxeItem(ModToolMaterial.ORICHALCUM, 3, 1f, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
+
+    public static final Item ORICHALCUM_HOE = registerItem("orichalcum_hoe",
+            new ModHoeItem(ModToolMaterial.ORICHALCUM, 0, 0f, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
+
+    public static final Item ORICHALCUM_SHOVEL = registerItem("orichalcum_shovel",
+            new ShovelItem(ModToolMaterial.ORICHALCUM, 1, 2f, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
+
+    public static final Item ORICHALCUM_SWORD = registerItem("orichalcum_sword",
+            new SwordItem(ModToolMaterial.ORICHALCUM, 3, 3f, new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(OnryoAdditionsMod.MOD_ID, name), item);
