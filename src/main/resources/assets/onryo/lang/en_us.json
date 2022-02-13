@@ -12,6 +12,10 @@
   "item.onryo.orichalcum_shovel": "Orichalcum Shovel",
   "item.onryo.orichalcum_sword": "Orichalcum Sword",
   "item.onryo.orichalcum_paxel": "Orichalcum Paxel",
+  "item.onryo.orichalcum_helmet": "Orichalcum Helmet",
+  "item.onryo.orichalcum_chestplate": "Orichalcum Chestplate",
+  "item.onryo.orichalcum_leggings": "Orichalcum Leggings",
+  "item.onryo.orichalcum_boots": "Orichalcum Boots",
 
   "block.onryo.orichalcum_block": "Orichalcum Block",
   "block.onryo.orichalcum_ore": "Orichalcum Ore",
@@ -20,5 +24,7 @@
   "itemGroup.onryo.additions": "Onryo Additions",
   "item.onryo.dowsing_rod.failed": "Hmmm, seems like theres nothing valuable here.",
   "item.onryo.dowsing_rod.tooltip.shift": "Right Click on ground to find valuables",
-  "item.onryo.dowsing_rod.tooltip": "Press §eSHIFT§r for more information"
+  "item.onryo.dowsing_rod.tooltip": "Press §eSHIFT§r for more information",
+
+  "enchantment.onryo.lightning_striker": "Lightning Striker"
 }

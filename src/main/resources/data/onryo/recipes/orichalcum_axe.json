@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "oo",
+    "o/",
+    " /"
+  ],
+  "key": {
+    "o": {
+      "item": "onryo:orichalcum_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "onryo:orichalcum_axe",
+    "count": 1
+  }
+}

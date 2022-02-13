@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+    "o o",
+    "o o"
+  ],
+  "key": {
+    "o": {
+      "item": "onryo:orichalcum_ingot"
+    }
+  },
+  "result": {
+    "item": "onryo:orichalcum_leggings",
+    "count": 1
+  }
+}
