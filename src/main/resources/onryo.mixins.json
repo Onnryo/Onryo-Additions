@@ -4,6 +4,7 @@
   "package": "net.onryo.additions.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModEntityDataSaver"
   ],
   "client": [
     "ExampleMixin"
