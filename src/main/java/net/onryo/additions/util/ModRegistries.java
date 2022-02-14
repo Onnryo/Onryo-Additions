@@ -41,5 +41,7 @@ public class ModRegistries {
         registry.putBlock(ModBlocks.STRAWBERRY_BUSH, RenderLayer.getCutout());
         registry.putBlock(ModBlocks.BLUEBERRY_BUSH, RenderLayer.getCutout());
         registry.putBlock(ModBlocks.CUCUMBER_CROP, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.DARK_ROSE, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.POTTED_DARK_ROSE, RenderLayer.getCutout());
     }
 }

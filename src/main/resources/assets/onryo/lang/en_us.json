@@ -25,6 +25,9 @@
   "block.onryo.raw_orichalcum_block": "Raw Orichalcum Block",
   "block.onryo.lamp": "Lamp",
   "block.onryo.cucumber_crop": "Cucumber Crop",
+  "block.onryo.dark_rose": "Dark Rose",
+  "block.onryo.potted_dark_rose": "Potted Dark Rose",
+
 
   "itemGroup.onryo.additions": "Onryo Additions",
   "item.onryo.dowsing_rod.failed": "Hmmm, seems like theres nothing valuable here.",
