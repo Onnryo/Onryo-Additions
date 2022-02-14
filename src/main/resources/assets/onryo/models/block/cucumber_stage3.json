@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "onryo:block/cucumber_stage3"
+  }
+}

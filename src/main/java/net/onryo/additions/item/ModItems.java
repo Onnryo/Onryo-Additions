@@ -28,6 +28,11 @@ public class ModItems {
     public static final Item BLUEBERRIES = registerItem("blueberries",
             new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH,
                     new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).food(ModFoodComponents.BLUEBERRIES)));
+    public static final Item CUCUMBER = registerItem("cucumber",
+            new AliasedBlockItem(ModBlocks.CUCUMBER_CROP,
+                    new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).food(ModFoodComponents.CUCUMBERS)));
+    public static final Item PICKLE = registerItem("pickle",
+            new PickleItem(new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).food(ModFoodComponents.PICKLES)));
 
     public static final Item DOWSING_ROD = registerItem("dowsing_rod",
             new DowsingRodItem(new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).maxDamage(64)));
@@ -67,7 +72,6 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP)));
 
     private static Item registerItem(String name, Item item) {
-        OnryoAdditionsMod.LOGGER.info(ModArmorMaterials.ORICHALCUM.getRepairIngredient().toString());
         return Registry.register(Registry.ITEM, new Identifier(OnryoAdditionsMod.MOD_ID, name), item);
     }
 

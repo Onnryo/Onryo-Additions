@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.onryo.additions.block.ModBlocks;
 import net.onryo.additions.enchantment.ModEnchantments;
 import net.onryo.additions.item.ModItems;
+import net.onryo.additions.statuseffects.ModStatusEffects;
 import net.onryo.additions.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ public class OnryoAdditionsMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEnchantments.registerModEnchantments();
+		ModStatusEffects.registerModStatusEffects();
 		ModRegistries.registerModStuffs();
 	}
 }

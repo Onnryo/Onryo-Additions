@@ -10,10 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.onryo.additions.OnryoAdditionsMod;
-import net.onryo.additions.block.custom.BlueberryBushBlock;
-import net.onryo.additions.block.custom.LampBlock;
-import net.onryo.additions.block.custom.StrawberryBushBlock;
-import net.onryo.additions.block.custom.StrengthBlock;
+import net.onryo.additions.block.custom.*;
 import net.onryo.additions.item.ModItemGroups;
 import net.onryo.additions.item.ModItems;
 
@@ -36,6 +33,9 @@ public class ModBlocks {
 
     public static final Block BLUEBERRY_BUSH = registerBlock("blueberry_bush",
             new BlueberryBushBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), null);
+
+    public static final Block CUCUMBER_CROP = registerBlock("cucumber_crop",
+            new CucumberBlock(FabricBlockSettings.copy(Blocks.BEETROOTS)), null);
     //public static final Block STRAWBERRY_BUSH = Registry.register(Registry.BLOCK, new Identifier(OnryoAdditionsMod.MOD_ID, "strawberry_bush"), new BerryBushBlock(ModItems.STRAWBERRIES));
     //public static final Block BLUEBERRY_BUSH = Registry.register(Registry.BLOCK, new Identifier(OnryoAdditionsMod.MOD_ID, "blueberry_bush"), new BerryBushBlock(ModItems.BLUEBERRIES));
 
