@@ -31,6 +31,8 @@ public class ModItems {
 
     public static final Item DOWSING_ROD = registerItem("dowsing_rod",
             new DowsingRodItem(new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).maxDamage(64)));
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().group(ModItemGroups.ADDITIONS_GROUP).maxCount(1)));
 
     public static final Item ORICHALCUM_PICKAXE = registerItem("orichalcum_pickaxe",
             new ModPickaxeItem(ModToolMaterial.ORICHALCUM, 1, 2f,

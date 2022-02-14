@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -17,6 +18,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.onryo.additions.block.ModBlocks;
+import net.onryo.additions.item.ModItems;
+import net.onryo.additions.util.InventoryUtil;
 import net.onryo.additions.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -47,6 +50,11 @@ public class DowsingRodItem extends Item {
                 Block blockBelow = context.getWorld().getBlockState(positionClicked.down(i)).getBlock();
 
                 Rarity rarity = isValuableBlock(blockBelow);
+                if(rarity != Rarity.USELESS) {
+                    if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)) {
+                        addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow);
+                    }
+                }
                 if(rarity == Rarity.USEFUL) {
                     //player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
                     context.getWorld().playSound(null, positionClicked, SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
@@ -66,7 +74,6 @@ public class DowsingRodItem extends Item {
             }
 
             if (!foundBlock) {
-                //player.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 1f, 1f);
                 context.getWorld().playSound(null, positionClicked, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 1f, 1f);
                 player.sendMessage(new TranslatableText("item.onryo.dowsing_rod.failed"), false);
             }
@@ -74,6 +81,13 @@ public class DowsingRodItem extends Item {
 
         context.getStack().damage(1, context.getPlayer(), (player) -> player.sendToolBreakStatus(player.getActiveHand()));
         return super.useOnBlock(context);
+    }
+
+    private void addNbtToDataTablet(PlayerEntity player, BlockPos pos, Block block) {
+        ItemStack tablet = player.getInventory().getStack(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET));
+        NbtCompound nbtData = new NbtCompound();
+        nbtData.putString("onryo.last_ore", "Found " + block.asItem().getName().getString() + " at (" + pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")");
+        tablet.setNbt(nbtData);
     }
 
     @Override

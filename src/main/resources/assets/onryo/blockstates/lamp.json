@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "onryo:block/lamp_off" },
+    "lit=true": { "model": "onryo:block/lamp_on" }
+  }
+}

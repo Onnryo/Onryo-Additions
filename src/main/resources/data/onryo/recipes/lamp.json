@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+    "oTo",
+    "ooo"
+  ],
+  "key": {
+    "o": {
+      "item": "onryo:orichalcum_ingot"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "onryo:lamp",
+    "count": 1
+  }
+}

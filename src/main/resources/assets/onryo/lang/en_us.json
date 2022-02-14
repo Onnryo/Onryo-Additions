@@ -3,6 +3,7 @@
   "item.onryo.orichalcum_nugget": "Orichalcum Nugget",
   "item.onryo.raw_orichalcum": "Raw Orichalcum",
   "item.onryo.dowsing_rod": "Dowsing Rod",
+  "item.onryo.data_tablet": "Data Tablet",
   "item.onryo.strawberries": "Strawberries",
   "item.onryo.blueberries": "Blueberries",
   "item.onryo.coal_sliver": "Coal Sliver",
@@ -20,6 +21,7 @@
   "block.onryo.orichalcum_block": "Orichalcum Block",
   "block.onryo.orichalcum_ore": "Orichalcum Ore",
   "block.onryo.raw_orichalcum_block": "Raw Orichalcum Block",
+  "block.onryo.lamp": "Lamp",
 
   "itemGroup.onryo.additions": "Onryo Additions",
   "item.onryo.dowsing_rod.failed": "Hmmm, seems like theres nothing valuable here.",

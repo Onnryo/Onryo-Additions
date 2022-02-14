@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.onryo.additions.OnryoAdditionsMod;
 import net.onryo.additions.block.custom.BlueberryBushBlock;
+import net.onryo.additions.block.custom.LampBlock;
 import net.onryo.additions.block.custom.StrawberryBushBlock;
 import net.onryo.additions.block.custom.StrengthBlock;
 import net.onryo.additions.item.ModItemGroups;
@@ -37,6 +38,10 @@ public class ModBlocks {
             new BlueberryBushBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), null);
     //public static final Block STRAWBERRY_BUSH = Registry.register(Registry.BLOCK, new Identifier(OnryoAdditionsMod.MOD_ID, "strawberry_bush"), new BerryBushBlock(ModItems.STRAWBERRIES));
     //public static final Block BLUEBERRY_BUSH = Registry.register(Registry.BLOCK, new Identifier(OnryoAdditionsMod.MOD_ID, "blueberry_bush"), new BerryBushBlock(ModItems.BLUEBERRIES));
+
+    public static final Block LAMP = registerBlock("lamp",
+            new LampBlock(FabricBlockSettings.of(Material.GLASS).strength(1.0f).requiresTool()
+                    .luminance((state) -> state.get(LampBlock.LIT) ? 15: 0)), ModItemGroups.ADDITIONS_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
