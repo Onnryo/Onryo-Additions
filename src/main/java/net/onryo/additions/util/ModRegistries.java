@@ -3,6 +3,7 @@ package net.onryo.additions.util;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.item.ItemRenderer;
@@ -16,6 +17,12 @@ public class ModRegistries {
     public static void registerModStuffs() {
         registerFuels();
         registerComposterChances();
+        registerStrippables();
+    }
+
+    private static void registerStrippables() {
+        StrippableBlockRegistry.register(ModBlocks.SAKURA_LOG, ModBlocks.STRIPPED_SAKURA_LOG);
+        StrippableBlockRegistry.register(ModBlocks.SAKURA_WOOD, ModBlocks.STRIPPED_SAKURA_WOOD);
     }
 
     private static void registerComposterChances() {
@@ -43,5 +50,8 @@ public class ModRegistries {
         registry.putBlock(ModBlocks.CUCUMBER_CROP, RenderLayer.getCutout());
         registry.putBlock(ModBlocks.DARK_ROSE, RenderLayer.getCutout());
         registry.putBlock(ModBlocks.POTTED_DARK_ROSE, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.SAKURA_SAPLING, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.POTTED_SAKURA_SAPLING, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.SAKURA_LEAVES, RenderLayer.getCutout());
     }
 }

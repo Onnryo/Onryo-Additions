@@ -1,12 +1,9 @@
 {
   "replace": false,
   "values": [
-    "onryo:strawberry_bush",
-    "onryo:blueberry_bush",
     "onryo:sakura_log",
-    "onryo:sakura_wood",
-    "onryo:sakura_planks",
     "onryo:stripped_sakura_log",
+    "onryo:sakura_wood",
     "onryo:stripped_sakura_wood"
   ]
 }

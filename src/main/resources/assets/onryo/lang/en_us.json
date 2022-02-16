@@ -8,6 +8,7 @@
   "item.onryo.blueberries": "Blueberries",
   "item.onryo.cucumber": "Cucumber",
   "item.onryo.pickle": "Pickle",
+  "item.onryo.pickle.eaten": "You smell like pickles :/",
   "item.onryo.coal_sliver": "Coal Sliver",
   "item.onryo.orichalcum_pickaxe": "Orichalcum Pickaxe",
   "item.onryo.orichalcum_axe": "Orichalcum Axe",
@@ -27,7 +28,14 @@
   "block.onryo.cucumber_crop": "Cucumber Crop",
   "block.onryo.dark_rose": "Dark Rose",
   "block.onryo.potted_dark_rose": "Potted Dark Rose",
-
+  "block.onryo.sakura_sapling": "Sakura Sapling",
+  "block.onryo.potted_sakura_sapling": "Potted Sakura Sapling",
+  "block.onryo.sakura_log": "Sakura Log",
+  "block.onryo.stripped_sakura_log": "Stripped Sakura Log",
+  "block.onryo.sakura_wood": "Sakura Wood",
+  "block.onryo.stripped_sakura_wood": "Stripped Sakura Wood",
+  "block.onryo.sakura_leaves": "Sakura Leaves",
+  "block.onryo.sakura_planks": "Sakura Planks",
 
   "itemGroup.onryo.additions": "Onryo Additions",
   "item.onryo.dowsing_rod.failed": "Hmmm, seems like theres nothing valuable here.",
@@ -37,6 +45,8 @@
   "enchantment.onryo.lightning_striker": "Lightning Striker",
 
   "effect.onryo.pickle": "Smelly",
+
+  "onryo.vomit": "BLARGGHHH",
 
   "death.attack.pickle": "%1$s ate a pickle :("
 }
