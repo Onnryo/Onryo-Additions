@@ -8,11 +8,8 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
-import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
-import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.onryo.additions.OnryoAdditionsMod;
 import net.onryo.additions.block.ModBlocks;
 
@@ -34,8 +31,17 @@ public class ModConfiguredFeatures {
                             SAKURA_TREE.withWouldSurviveFilter(ModBlocks.SAKURA_SAPLING), 0.1f)),
                             SAKURA_TREE.withWouldSurviveFilter(ModBlocks.SAKURA_SAPLING))));
 
+    public static final ConfiguredFeature<RandomPatchFeatureConfig, ?> DARK_ROSE =
+            ModConfiguredFeatures.register("dark_rose", Feature.FLOWER.configure(
+                    createRandomPatchFeatureConfig(BlockStateProvider.of(ModBlocks.DARK_ROSE), 64)));
+
     public static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
         return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(OnryoAdditionsMod.MOD_ID, name), configuredFeature);
+    }
+
+    private static RandomPatchFeatureConfig createRandomPatchFeatureConfig(BlockStateProvider block, int tries) {
+        return ConfiguredFeatures.createRandomPatchFeatureConfig(tries,
+                Feature.SIMPLE_BLOCK.configure(new SimpleBlockFeatureConfig(block)).withInAirFilter());
     }
 
     public static void registerConfiguredFeatures() {
